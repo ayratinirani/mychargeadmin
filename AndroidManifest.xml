@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.gorganshaj.admin" >
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	
+<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/business"
+        android:label="@string/app_title"
+        android:theme="@style/AppTheme"
+		android:resizeableActivity = "true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".Login"
+			android:theme="@style/AppTheme"
+            android:label="ورود به سایت"
+			>
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+			<activity
+				android:theme="@style/AppTheme"
+				android:name=".SmsRes"
+				android:label="نتیجه پیامک ایرانسل"
+			>
+				<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value=".MainActivity" />
+				
+        </activity>
+		
+		
+		<activity
+		android:name=".Tarif"
+		android:label="تعریف انواع کد "
+		>
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+			
+        </activity>
+		
+		<receiver android:name=".IncomingSms">   
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+
+		<service android:name=".USSDService"
+			android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+			<intent-filter>
+				<action android:name="android.accessibilityservice.AccessibilityService" />
+			</intent-filter>
+			<meta-data android:name="android.accessibilityservice"
+				android:resource="@xml/mservice" />
+		</service>
+		<service 
+			android:name=".MService"
+			
+			></service>
+    </application>
+
+</manifest>

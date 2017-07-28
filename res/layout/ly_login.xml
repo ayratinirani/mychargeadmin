@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:background="#1A9FA7"
+	android:padding="40dp"
+	>
+
+	<EditText
+		android:gravity="center_horizontal"
+		android:textColorHint="#FBF7F6"
+		android:id="@+id/_login_email"
+		android:inputType="textEmailAddress"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:textSize="22sp"
+		android:layout_height="wrap_content"
+		android:hint="ایمیل"/>
+
+	<EditText
+		android:gravity="center_horizontal"
+		android:textColorHint="#FBF7F6"
+		android:id="@+id/_login_pass"
+		android:layout_marginTop="50dp"
+		android:inputType="textPassword"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:textSize="22sp"
+		android:layout_height="wrap_content"
+		android:hint="رمز"/>
+
+	<EditText
+		android:gravity="center_horizontal"
+		android:textColorHint="#FBF7F6"
+		android:id="@+id/_login_url"
+		android:inputType="textUri"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:textSize="22sp"
+		android:layout_height="wrap_content"
+		android:hint="ادرس urlاولیه "/>
+
+	<Button
+		android:textSize="22sp"
+		android:onClick="sabtenam"
+		android:layout_marginTop="50dp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="ثبت نام"
+		android:textColor="#E8F1F0"
+		android:background="#000000"/>
+
+</LinearLayout>
+

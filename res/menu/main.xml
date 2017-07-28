@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/tarif"
+        android:title="تعریف کدهای ussd"
+		android:showAsAction="always"/>
+	<item
+        android:id="@+id/logout"
+        android:title="لاگ اوت"
+		android:showAsAction="never"/>
+	
+    <item
+        android:id="@+id/exit"
+        android:title="بستن برنامه"
+		android:showAsAction="never"/>
+    
+</menu>

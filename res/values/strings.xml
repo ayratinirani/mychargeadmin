@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mychargeadmin</string>
+	<string name="app_title">گرگان شارژ</string>
+	<string name="tayid">پیشنهاد ویژه</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="accessibility_service_description">yechizi</string>
+</resources>

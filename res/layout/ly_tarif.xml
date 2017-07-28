@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<EditText
+		android:gravity="center_horizontal"
+		android:textColorHint="#0Bf7F0"
+		android:id="@+id/_tarif_num"
+		android:inputType="number"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:hint="شماره"
+		android:textSize="22sp"/>
+
+	<EditText
+		android:textColorHint="#0Bf7F0"
+		android:gravity="center_horizontal"
+		android:id="@+id/_tarif_ussd"
+		android:inputType="text"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:hint=" کد  ussd"
+		android:textSize="22sp"/>
+
+	<Button
+		android:onClick="sabt"
+		android:layout_marginTop="20dp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="ذخیره"
+		android:textSize="22sp"/>
+
+	<Button
+		android:onClick="next"
+		android:layout_marginTop="20dp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="صفحه اصلی"
+		android:textSize="22sp"/>
+
+	<ListView
+		android:id="@+id/ly_tarifListView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</LinearLayout>
+
