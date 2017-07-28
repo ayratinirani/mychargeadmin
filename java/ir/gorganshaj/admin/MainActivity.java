@@ -74,12 +74,13 @@ public class MainActivity extends AppCompatActivity {
 			//Toast.makeText(getApplicationContext(),token,Toast.LENGTH_LONG).show();
 
 			startActivity(intent);
+			finish();
+		}else {
+			user = appsettings.getString("email", "");
+			pass = appsettings.getString("password", "");
+			get_news();
+			//startTimer();
 		}
-		user = appsettings.getString("email", "");
-		pass = appsettings.getString("password", "");
-		get_news();
-		//startTimer();
-
 	}//oncreate ends
 
 

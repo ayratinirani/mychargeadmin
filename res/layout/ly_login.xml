@@ -8,7 +8,9 @@
 	android:background="#1A9FA7"
 	android:padding="40dp"
 	>
-
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
 	<EditText
 		android:gravity="center_horizontal"
 		android:textColorHint="#FBF7F6"
@@ -19,19 +21,25 @@
 		android:textSize="22sp"
 		android:layout_height="wrap_content"
 		android:hint="ایمیل"/>
-
+	</android.support.design.widget.TextInputLayout>
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
 	<EditText
-		android:gravity="center_horizontal"
-		android:textColorHint="#FBF7F6"
 		android:id="@+id/_login_pass"
-		android:layout_marginTop="50dp"
-		android:inputType="textPassword"
 		android:layout_width="match_parent"
-		android:ems="10"
-		android:textSize="22sp"
 		android:layout_height="wrap_content"
-		android:hint="رمز"/>
-
+		android:layout_marginTop="50dp"
+		android:ems="10"
+		android:gravity="center_horizontal"
+		android:hint="رمز"
+		android:inputType="textPassword"
+		android:textColorHint="#FBF7F6"
+		android:textSize="22sp" />
+	</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
 	<EditText
 		android:gravity="center_horizontal"
 		android:textColorHint="#FBF7F6"
@@ -39,11 +47,13 @@
 		android:inputType="textUri"
 		android:layout_width="match_parent"
 		android:ems="10"
+		android:layout_marginTop="50dp"
 		android:textSize="22sp"
 		android:layout_height="wrap_content"
 		android:hint="ادرس urlاولیه "/>
-
+</android.support.design.widget.TextInputLayout>
 	<Button
+
 		android:textSize="22sp"
 		android:onClick="sabtenam"
 		android:layout_marginTop="50dp"

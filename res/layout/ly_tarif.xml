@@ -36,14 +36,6 @@
 		android:text="ذخیره"
 		android:textSize="22sp"/>
 
-	<Button
-		android:onClick="next"
-		android:layout_marginTop="20dp"
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:text="صفحه اصلی"
-		android:textSize="22sp"/>
-
 	<ListView
 		android:id="@+id/ly_tarifListView"
 		android:layout_width="match_parent"

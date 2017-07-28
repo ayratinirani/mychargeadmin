@@ -61,6 +61,9 @@ public class Tarif extends AppCompatActivity
 	}
 	public void sabt(View v){
 		ContentValues initialValues = new ContentValues();
+		if (number.getText().toString().equals("")||codesd.getText().equals("")){
+			return;
+		}
 		String numm=number.getText().toString();
 		String coodd=codesd.getText().toString();
 		initialValues.put("_id", numm); // the execution is different if _id is 2
@@ -75,9 +78,6 @@ public class Tarif extends AppCompatActivity
 		getListOf();
 	
 		
-	}
-	public void next(View v){
-		startActivity(new Intent(this,MainActivity.class));
 	}
 
 	@Override
